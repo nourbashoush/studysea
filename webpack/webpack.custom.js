@@ -20,7 +20,8 @@ module.exports = async (config, options, targetOptions) => {
   });
 
   // PLUGINS
-  if (config.mode === 'development') {
+  if (config.mode === 'development' && process.arch !== 'arm64') {
+    // webpack-notifier bundles an Intel-only terminal-notifier, which can't run on Apple Silicon without Rosetta
     config.plugins.push(
       new ESLintPlugin({
         baseConfig: {
