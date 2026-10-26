@@ -21,7 +21,7 @@ A study app built around the Pomodoro technique: study for a set block, say 25 m
 
 StudySea was our second-year team project at the University of Birmingham, where groups of seven each build a web app over the semester. We built it from February to May 2023, and each of us owned part of it from end to end. Mine were the feed, saving each study session once it's over, and the settings pages. I also looked after the database and its migrations, and made the shared Angular components the rest of the team built their pages from.
 
-It's a [JHipster](https://www.jhipster.tech) app, which every team had to use unless they could make a good case for something else: Java and Spring Boot on the back end, Angular on the front, and PostgreSQL in production. The chat is a small separate Node.js server using Socket.IO, in [`chat-server`](chat-server).
+It's a [JHipster](https://www.jhipster.tech) app: Java and Spring Boot on the back end, Angular on the front, and PostgreSQL in production. Every team had to use JHipster unless they could make a good case for something else. The chat is a small separate Node.js server using Socket.IO, in [`chat-server`](chat-server).
 
 It isn't online any more. The screenshots are its pages rebuilt for [my site](https://nour.page/projects/studysea/), with made-up people in them.
 
