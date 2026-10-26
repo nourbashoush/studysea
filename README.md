@@ -21,7 +21,7 @@ A study app built around the Pomodoro technique: study for a set block, say 25 m
 
 StudySea was our second-year team project at the University of Birmingham, built by seven of us from February to May 2023. Each of us owned features from end to end. Mine were the feed, joining friends' study sessions, the settings page and keyboard shortcuts. I also looked after the database and its migrations, and made the shared Angular components the rest of the team built their pages from.
 
-It's a [JHipster](https://www.jhipster.tech) app: Java and Spring Boot on the back end, Angular on the front, and PostgreSQL in production. The chat is a small separate Node.js server using Socket.IO, in [`src/main/node`](src/main/node).
+It's a [JHipster](https://www.jhipster.tech) app: Java and Spring Boot on the back end, Angular on the front, and PostgreSQL in production. The chat is a small separate Node.js server using Socket.IO, in [`chat-server`](chat-server).
 
 It isn't online any more. The screenshots are its pages rebuilt for [my site](https://nour.page/projects/studysea/), with made-up people in them.
 
@@ -31,7 +31,7 @@ You need Java 11 or newer (it runs on 17) and Node.js 18 or newer. In developmen
 
 ```bash
 # 1. The chat server, on port 3000
-cd src/main/node && npm install && node main.js
+cd chat-server && npm install && node main.js
 
 # 2. The app, on port 8080 (in another terminal, from the project root)
 ./mvnw
